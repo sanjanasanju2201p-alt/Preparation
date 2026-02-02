@@ -1,5 +1,5 @@
 import java.util.*;
-public class Rangesumquery {
+public class RangeSumQuery {
     public static void preSum(int arr[],int pre[]){
         pre[0]=arr[0];
         for(int i=1;i<arr.length;i++){
@@ -24,8 +24,9 @@ return sum;
     public static void main(String[] args) {
         Scanner sc =new Scanner(System.in);
         int arr[]={2,3,4,6,8};
-         int pre[]=new int[5];
+         int pre[]=new int[arr.length];
          preSum (arr, pre);
+         System.out.println("enter the range where l<r and r!>arr.length");
         int l=sc.nextInt();
         int r=sc.nextInt();
         System.out.println(rangeSumQuery( l, r, pre));
