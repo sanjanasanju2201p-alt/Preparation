@@ -26,7 +26,7 @@ return sum;
         int arr[]={2,3,4,6,8};
          int pre[]=new int[arr.length];
          preSum (arr, pre);
-         System.out.println("enter the range where l<r and r!>arr.length");
+         System.out.println("enter the range where l<r<arr.length");
         int l=sc.nextInt();
         int r=sc.nextInt();
         System.out.println(rangeSumQuery( l, r, pre));
