@@ -4,15 +4,15 @@ public class RemoveDuplicates {
     public static int removeDuplicates(int a[]){
         int i=0;
         int j=1; 
-        for(j=1;j<n;j++){
+        for(j=1;j<=a.length-1;j++){
 
         if(a[i]!=a[j]){
-            i++;
+            i++;      //we are not removing duplictes ,just overwritting array
             a[i]=a[j];
         }
 
     }
-    return i+1;
+    return i+1; 
 }
       
     public static void main(String[] args) {
@@ -22,8 +22,12 @@ public class RemoveDuplicates {
         for(int i=0;i<a.length;i++){
             a[i]=sc.nextInt();
         }
-        removeDuplicates(a);
-        System.out.println(a);
+        int k=removeDuplicates(a);
+        System.out.println(k);//total no of elements after removing duplicates
+        //array after removing duplicates
+        for(int i=0;i<k;i++){//<k because we want only original elements which only exist till k
+        System.out.println(a[i]);
 
     }
+}
 }
