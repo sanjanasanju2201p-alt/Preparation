@@ -33,7 +33,7 @@ public class BankAccount {
     public static void main(String[] args) {
         BankAccount acc1=new BankAccount();
         acc1.displayInfo();
-        BankAccount acc2=new BankAccount("sanju","123ba",5000);
+        BankAccount acc2=new BankAccount("sanju","123ba",3000);
         acc2.displayInfo();
         BankAccount acc3=new BankAccount(acc2);
         acc3.displayInfo();
