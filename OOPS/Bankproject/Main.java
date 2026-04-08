@@ -2,7 +2,7 @@ package Preparation.OOPS.Bankproject;
 
 public class Main {
     public static void main(String[] args) {
-    Bankaccount acc1=new Bankaccount("sanju", "12bbs", 100000);
+    /*Bankaccount acc1=new Bankaccount("sanju", "12bbs", 100000);
     acc1.deposit(2000);
     acc1.displayInfo();
     acc1.withdraw(2000);
@@ -17,7 +17,14 @@ public class Main {
     acc2.deposit(50000);
     acc2.displayInfo();
     acc2.withdraw(-1);
-    acc2.displayInfo();
+    acc2.displayInfo();*/
+    Savingsaccount acc =new Savingsaccount("mallu", "2894398985", 80000, 7);
+    acc.addinterest();
+    acc.displayInfo();
+    Currentaccount acc4=new Currentaccount("san", "28919374287", 20000, 50000);
+    acc4.displayInfo();
+    acc4.withdraw(70001);
+
 
 }
 }

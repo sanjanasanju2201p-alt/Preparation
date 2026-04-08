@@ -20,6 +20,9 @@ public class Bankaccount {
     public double getbal(){
         return balance;
     }
+    public void setbalance(double amount){
+        balance=amount;
+    }
     public void setname(String name){
         if(name!=null && !name.isEmpty()){
             accountholdername=name;
