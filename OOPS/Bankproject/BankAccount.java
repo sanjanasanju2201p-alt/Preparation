@@ -35,7 +35,26 @@ public class Bankaccount {
     public void deposit(double amount){
         if(amount>0){
             balance+=amount;
-            System.out.println("amount deposited and balance is updated");
+            
+        }
+        else{
+            System.out.println("invalid amount");
+        }
+    }
+    public void deposit(double amount,String Description){
+        if(amount>0){
+            balance+=amount;
+            System.out.println("amount"+" "+amount+" "+"deposited" +"Reason"+" "+Description);
+        }
+        else{
+            System.out.println("invalid amount");
+        }
+    }
+    public void deposit(double amount,String currency,double conversionrate){
+        if(amount>0){
+            double converted_amount=amount*conversionrate;
+            balance+=converted_amount;
+            System.out.println("amount"+" "+amount+" "+"deposited" +" "+currency+" "+"in Rs"+converted_amount);
         }
         else{
             System.out.println("invalid amount");

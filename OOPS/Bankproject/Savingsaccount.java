@@ -13,6 +13,7 @@ public class Savingsaccount extends Bankaccount {
         deposit(interest);
         System.out.println("interest is deposited rs"+interest);
     }
+    @Override 
      void displayInfo(){
         super.displayInfo();
         System.out.println("interest rate"+interestrate);

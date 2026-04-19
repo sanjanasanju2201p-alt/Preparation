@@ -7,12 +7,13 @@ Currentaccount(String name,String accnum,double bal,double odl){
     overdraftlimit=odl;
 
 }
+@Override 
 public void withdraw(double amount){
     if(amount<=0){
         System.out.println("invalid amount");
     }
     else if(amount>getbal()+overdraftlimit){
-        System.out.println("the amount is exceed the overdraftlimit");
+        System.out.println("the amount has exceed the overdraftlimit");
     }
 
     else{
