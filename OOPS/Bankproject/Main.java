@@ -32,16 +32,22 @@ public class Main {
     acc4.displayInfo();
     Bankaccount acc1=new Currentaccount("sanju", "12bbs", 100000.0,200000.0);
     acc1.withdraw(500000);*/
-    Bankaccount acc []=new Bankaccount[3];
+    /*Bankaccount acc []=new Bankaccount[3];
     acc[0]=new Bankaccount("sanjana","hnchd",3000);
     acc[1]=new Savingsaccount("sanju","dnj c",5000,2);
     acc[2]=new Currentaccount("sanju", "gsggbc", 3000, 50000);
     for (Bankaccount i : acc) {
     i.withdraw(1000.0); 
-}
-
-
-        
+}*/
+    Savingsaccount acc = new Savingsaccount("sanju", "558", 5000, 2);
+    acc.transfer(3000, "s36478");
+    Currentaccount acc1= new Currentaccount("mallu", "122null", 30000, 50000);
+    acc1.withdraw(40000); 
+    
+    Savingsaccount acc2= new Savingsaccount("anu", "288", 4000, 2);
+    acc2.displayInfo();
+    acc2.withdraw(2000);
+    acc2.gettransactionhistory();
         
 
 

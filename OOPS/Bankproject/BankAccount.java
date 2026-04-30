@@ -1,6 +1,6 @@
 package Preparation.OOPS.Bankproject;
 
-public class Bankaccount {
+public abstract class Bankaccount {
 
     private String accountholdername;
     private String accountnum;
@@ -61,17 +61,7 @@ public class Bankaccount {
         }
     }
     
-    public void withdraw(double amount){
-        if(amount>balance){
-            System.out.println("insufficient balance");
-        }
-        else if(amount<=0){
-            System.out.println("invalid amount");
-        }
-        else{
-            balance-=amount;
-        }
-    }
+    public abstract void withdraw(double amount);
     void displayInfo(){
         System.out.println("NAME:"+accountholdername);
         System.out.println("ACCOUNT NUMBER:"+accountnum);
