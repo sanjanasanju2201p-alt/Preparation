@@ -2,7 +2,7 @@ package Preparation.OOPS.Parkinglot;
 
 public class Car extends Vehicle {
     public Car(String licenseplate){
-        super(licenseplate,"Car");
+        super(vehicletype,"Car");
     }
 @Override
 public double getchargeperhour(){
