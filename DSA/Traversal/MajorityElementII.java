@@ -49,7 +49,7 @@ public class MajorityElementII {
         return list;
     }
     public static void main(String[] args) {
-        int nums[]={2,2,2,6,6,6};
+        int nums[]={2,2,2,6,6,1};
         System.out.println(majorityElement(nums));
 
     }
