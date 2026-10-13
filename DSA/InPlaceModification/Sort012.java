@@ -49,7 +49,7 @@ public class Sort012 {
             for(int i=count0;i<=count1+count1;i++)arr[i]=1;
             for(int i=count1+count0;i<arr.length;i++)arr[i]=2;
             System.out.println(Arrays.toString(arr));
-            sort(arr);
+            sort(arr);  // Optimal approach
     }
     
 }
